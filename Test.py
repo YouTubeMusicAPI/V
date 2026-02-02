@@ -1,8 +1,7 @@
 import asyncio
 from pyrogram import Client, filters
 from pytgcalls import PyTgCalls
-from pytgcalls.types import MediaStream
-from pytgcalls.types.stream import AudioQuality, VideoQuality
+from pytgcalls.types import MediaStream, AudioQuality, VideoQuality
 
 # ───── CONFIG ─────
 API_ID = 35362137
