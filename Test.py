@@ -93,5 +93,5 @@ async def main():
     await idle()
     
 
-asyncio.run(main())
+bot.run(main())
   
