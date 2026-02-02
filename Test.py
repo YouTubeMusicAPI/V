@@ -91,7 +91,7 @@ async def main():
     await call.start()
     print("Bot + Assistant Started")
     await idle()
-    await asyncio.Event().wait()
+    
 
 asyncio.run(main())
   
