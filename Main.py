@@ -5,12 +5,7 @@ from Test import user, bot
 app = PyTgCalls(user)
 
 @bot.on_message(filters.command("play"))
-async def play(_, m):
-
-    ok = await ensure_assistant(bot, user, m.chat.id, m)
-    if not ok:
-        return
-
+async def play(_, m)
     reply = m.reply_to_message
 
     # ─── CASE 1: Reply to voice / audio ───
