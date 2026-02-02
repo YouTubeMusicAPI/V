@@ -1,6 +1,6 @@
 import asyncio
 from pyrogram import Client, filters
-from pytgcalls import PyTgCalls
+from pytgcalls import PyTgCalls, idle
 from pytgcalls.types import MediaStream, AudioQuality, VideoQuality
 
 # ───── CONFIG ─────
@@ -87,9 +87,10 @@ async def stop(_, m):
 # ───── START ─────
 async def main():
     await bot.start()
-    await assistant.start()
+    await user.start()
     await call.start()
     print("Bot + Assistant Started")
+    await idle()
     await asyncio.Event().wait()
 
 asyncio.run(main())
